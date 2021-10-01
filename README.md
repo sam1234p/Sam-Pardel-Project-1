@@ -2,9 +2,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+https://drive.google.com/file/d/1YcMuA32oYC_eyciN-ypf3szFJrvvzoCs/view?usp=sharing
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible folder may be used to install only certain pieces of it, such as Filebeat.
   elk.yml
   https://drive.google.com/file/d/1eNGnwcBY2dmb7pT0EOLcNZjzMnuIGGdY/view?usp=sharing
 
@@ -23,9 +23,9 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly _responsive and durable____, in addition to restricting _traffic____ to the network.
 - Load Balancers primary function is to shift traffic which can stop a denial of service attack. The advantage of a jumpbox is to give a cyber employee access from a single machine that can be monitored and hardened.
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _data____ and system _logs____.
 Filebeat watches for log events.
-Metricbeat records statistics and metric that it aquires and lets the user choose the output.
+Metricbeat records statistics and metrics that it aquires and lets the user choose the output.
 
 The configuration details of each machine may be found below.
 | Name       | Function      | IP Address | OS    |
