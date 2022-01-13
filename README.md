@@ -2,7 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://drive.google.com/file/d/1YcMuA32oYC_eyciN-ypf3szFJrvvzoCs/view?usp=sharing
+
+![Screenshot (310)](https://user-images.githubusercontent.com/91719845/149382675-c286e163-43ce-439f-ae8f-8c00a0bd899d.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible folder may be used to install only certain pieces of it, such as Filebeat.
   elk.yml
@@ -75,7 +76,6 @@ This ELK server is configured to monitor the following machines:
 10.0.0.6
 10.0.0.7
 
-
 We have installed the following Beats on these machines:
 I successfully installed filebeat and metricbeat on these machines.
 
@@ -85,14 +85,13 @@ Filebeat collects log data from each machine while Metricbeat collects metrics a
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _elk.yml____ file to /etc/ansible_____.
-- Update the _elk.yml____ file to include...
-- Run the playbook, and navigate to _ELK-SERVER___ to check that the installation worked as expected.
+- Copy the _elk.yml file to /etc/ansible.
+- Update the elk.yml file to include...
+- Run the playbook, and navigate to ELK-SERVER to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 The playbook file is elk.yml and you copy it using git to clone my repository and then copying the playbooks file to the previosly mentioned /etc/ansible directory.
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 You update the ansible hosts file with your desired IPs then you update your hosts on your playbook to the desired grouping, and finally you can specify which machine install each program on by again changing the hosts in the playbook.
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://yourelkserverpublicip:5601/app/kibana
